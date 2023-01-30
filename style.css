@@ -5,6 +5,13 @@
 }
 
 .cv-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 60px;
   background-color: black;
+}
+
+.cv-body-avatar {
+  border-radius: 50%;
 }
