@@ -73,6 +73,10 @@ html, body {
   justify-content: center;
 }
 
+.cv-body-info-list {
+  padding-left: 20px;
+}
+
 .cv-body-info-title_name {
   font-size: 48px;
   margin: 0;
