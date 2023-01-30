@@ -87,6 +87,7 @@ html, body {
   text-align: center;
   text-decoration: none;
   margin-top: 1em;
+  border: 3px solid var(--brown-d);
 }
 .cv-body-info_pdf:hover {
   background-color: var(--pink);
