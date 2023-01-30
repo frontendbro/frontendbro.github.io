@@ -3,3 +3,8 @@
   flex-direction: column;
   margin: 0 auto;
 }
+
+.cv-head {
+  height: 60px;
+  background-color: black;
+}
