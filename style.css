@@ -15,7 +15,7 @@ html, body {
 
 .body {
   background-color: var(--brown-l);
-  color: var(--black);
+  color: var(--beige);
 }
 
 .cv {
@@ -50,6 +50,8 @@ html, body {
 .cv-body-wrap {
   display: flex;
   justify-content: space-evenly;
+  padding-right: 40px;
+  padding-left: 40px;
 }
 
 .cv-body-avatar {
@@ -59,12 +61,23 @@ html, body {
 }
 
 .cv-body-info {
-
+  display: flex;
+  flex-direction: column;
+}
+.cv-body-info-title {
+  text-align: center;
+}
+.cv-body-info-title_name {
+  font-size: 48px;
+  margin-bottom: 0;
 }
 
-.cv-body-info_title {
-  font-size: 48px;
-  color: var(--beige);
+.cv-body-info-title_position {
+  
+}
+
+.cv-body-info_txt {
+  flex-grow: 1;
 }
 
 .cv-body-info_pdf {
@@ -79,17 +92,14 @@ html, body {
     margin-right: 0;
   }
   .cv-body-wrap {
-    /* flex-grow: 1; */
-    /* align-items: center; */
-    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
   }
 
-  .cv-body-info {
+  .cv-body-info-title {
     text-align: center;
   }
-  .cv-body-info_title, .cv-body-info_txt {
+  .cv-body-info-title_name, .cv-body-info-title_position {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
   }
