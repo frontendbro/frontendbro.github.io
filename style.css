@@ -113,8 +113,13 @@ html, body {
 
   .cv-body-info-title {
     text-align: center;
+
   }
-  .cv-body-info-title_name, .cv-body-info-title_position {
+
+  .cv-body-info-title_position {
+    margin: 24px 0;
+  }
+  .cv-body-info-title_name {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     text-align: center;
