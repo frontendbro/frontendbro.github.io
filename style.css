@@ -60,13 +60,15 @@ html, body {
 .cv-body-wrap-inner {
   align-self: center;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cv-body-avatar {
   border-radius: 50%;
-  border: 3px solid var(--brown-d);
-  margin-right: 40px;
+  border: 5px solid var(--brown-d);
+  margin-bottom: 40px;
+  box-sizing: border-box;
 }
 
 .cv-body-info {
