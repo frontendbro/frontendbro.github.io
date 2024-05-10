@@ -109,7 +109,7 @@ html, body {
   border: 3px solid var(--black);
 }
 .cv-body-info_pdf:hover {
-  background-color: var(--green);
+  background-color: var(--yellow);
   transition: all 0.5s;
 }
 
