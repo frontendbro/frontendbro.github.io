@@ -21,7 +21,7 @@ html, body {
 }
 
 .body {
-  background-color: var(--yellow-l);
+  background-color: var(--green-l);
   color: var(--black);
 }
 
@@ -99,7 +99,7 @@ html, body {
 .cv-body-info_pdf {
   padding: 20px;
   border-radius: 20px;
-  background-color: var(--green-l);
+  background-color: var(--yellow-l);
   font-size: 20px;
   color: var(--black);
   text-align: center;
