@@ -94,6 +94,7 @@ html, body {
 .cv-body-info-title_name {
   font-size: 48px;
   margin: 0;
+  text-align: center;
 }
 
 .cv-body-info_pdf {
@@ -130,7 +131,6 @@ html, body {
   .cv-body-info-title_name {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-    text-align: center;
   }
 }
 
