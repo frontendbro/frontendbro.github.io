@@ -74,11 +74,31 @@ html, body {
   align-items: center;
 }
 
-.cv-body-avatar {
+/* .cv-body-avatar {
   border-radius: 50%;
   border: 5px solid var(--black);
   margin-bottom: 40px;
   box-sizing: border-box;
+} */
+
+img {
+  --f: .05; /* the parallax factor (the smaller the better) */
+  --r: 10px; /* radius */
+  
+  --_f: calc(100%*var(--f)/(1 + var(--f)));
+  --_a: calc(90deg*var(--f));
+  width: 450px; /* the image size */
+  aspect-ratio: calc(1 + var(--f));
+  object-fit: cover;
+  clip-path: inset(0 var(--_f) 0 0 round var(--r));
+  transform: perspective(400px) var(--_t,rotateY(var(--_a)));
+  transition: .5s;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+img:hover {
+  clip-path: inset(0 0 0 var(--_f) round var(--r));
+  --_t: translateX(calc(-1*var(--_f))) rotateY(calc(-1*var(--_a)))
 }
 
 .cv-body-info {
@@ -124,7 +144,7 @@ html, body {
   cursor: pointer;
   color: var(--black);
   position: relative;
-  transition: background cubic-bezier(0.76, 0, 0.24, 1) 0.35s;
+  transition: background cubic-bezier(0.76, 0, 0.24, 1) 0.5s;
   margin-top: 40px;
 }
 .btn::before, .btn::after {
@@ -146,11 +166,11 @@ html, body {
   z-index: 2;
 }
 .btn:hover {
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
 }
 .btn:hover::before, .btn:hover::after {
   transform: scale(1, 1);
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
   background: var(--black);
   border: 2px solid var(--yellow-l);
 }
