@@ -97,7 +97,7 @@ html, body {
   text-align: center;
 }
 
-.cv-body-info_pdf {
+/* .cv-body-info_pdf {
   padding: 20px;
   border-radius: 20px;
   background-color: var(--yellow-l);
@@ -111,6 +111,56 @@ html, body {
 .cv-body-info_pdf:hover {
   background-color: var(--yellow);
   transition: all 0.5s;
+} */
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 1.55rem 4.5rem 1.25rem;
+  line-height: 1;
+  border: none;
+  cursor: pointer;
+  color: var(--black);
+  position: relative;
+  transition: background cubic-bezier(0.76, 0, 0.24, 1) 0.35s;
+  margin-top: 40px;
+}
+.btn::before, .btn::after {
+  content: "";
+  display: block;
+  z-index: 0;
+  position: absolute;
+  inset: 0;
+  border: 2px solid var(--black);
+  transition: transform cubic-bezier(0.76, 0, 0.24, 1) 0.3s;
+  background: var(--yellow-l);
+}
+.btn::before {
+  transform: scale(1.075, 1);
+  z-index: 1;
+}
+.btn::after {
+  transform: scale(1.025, 1.2);
+  z-index: 2;
+}
+.btn:hover {
+  transition-duration: 0.3s;
+}
+.btn:hover::before, .btn:hover::after {
+  transform: scale(1, 1);
+  transition-duration: 0.3s;
+  background: var(--black);
+  border: 2px solid var(--yellow-l);
+}
+
+.btn span {
+  z-index: 3;
+}
+
+.btn:hover span {
+  color: var(--yellow-l);
 }
 
 @media only screen and (max-width : 992px) {
@@ -140,8 +190,8 @@ html, body {
 }
 
   .cv-body {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
     padding-bottom: 20px;
   }
 
